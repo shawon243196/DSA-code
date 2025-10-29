@@ -10,7 +10,7 @@ int arr[mxsz],toppos=-1;
 
 void push(int val)
 {//overflow
-    if(toppos>=mxsz-1)
+    if(toppos==mxsz-1)
     {
         cout<<"overflow"<<endl;
         return;
@@ -22,7 +22,7 @@ void pop()
 {
     //delete arr[toppos];
     //underflow
-    if(toppos<0)
+    if(toppos==-1)
     {
         cout<<"underflow"<<endl;
         return;
@@ -78,6 +78,8 @@ int main()
 //     cout<<st.top()<< " ";
 //     st.pop();
 // }
+
+
 strack s1,s2;
 s1.push(10);
 s1.push(20);
