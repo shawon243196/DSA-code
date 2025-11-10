@@ -31,6 +31,10 @@ class Stack
     head=head->next;
     delete temp;
    }
+   void top()
+   {
+       cout<< head->data;
+   }
    int SIZE()
    {
     return size;
@@ -53,13 +57,13 @@ int main()
     s1.push(10);
     s1.push(20);
     s1.push(100);
-    s1.display();
+   // s1.display();
+   s1.top();
     s1.pop();
-    s1.pop();
-    s1.pop();
+    
     cout<<endl;
-    s1.display();
-
+   // s1.display();
+   s1.top();
 
 
 }
